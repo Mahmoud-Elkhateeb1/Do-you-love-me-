@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f9e3e3;
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 600px;
+}
+
+.header_text {
+    font-size: clamp(1.5em, 8vw, 3em);
+    color: #d32f2f;
+    margin: 20px 0;
+    word-wrap: break-word;
+}
+
+.gif_container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.gif_container video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+
+/* Tablet and larger screens */
+
+@media (min-width: 768px) {
+    .header_text {
+        font-size: 3em;
+    }
+}
+
+
+/* Mobile screens */
+
+@media (max-width: 767px) {
+    body {
+        padding: 15px;
+    }
+    .container {
+        max-width: 100%;
+    }
+    .gif_container {
+        max-width: 100%;
+    }
+}
